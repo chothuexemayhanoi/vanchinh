@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cho Thuê Xe Máy Long Biên - Văn Chính | Uy Tín - Giá Rẻ</title>
-    <meta name="description" content="Dịch vụ cho thuê xe máy uy tín tại Long Biên, Hà Nội. Xe mới, thủ tục đơn giản, giá rẻ. Liên hệ Văn Chính: 0989 595 533">
+    <!-- SEO ULTRA MODE: Title tối ưu từ khóa chính + CTA -->
+    <title>Liên hệ cho thuê xe máy Long Biên - Văn Chính | 0989.595.533</title>
     
-    <!-- 1. Security: DOMPurify for XSS Protection -->
+    <!-- SEO ULTRA MODE: Meta Description tự nhiên, chứa từ khóa LSI -->
+    <meta name="description" content="Dịch vụ cho thuê xe máy Long Biên uy tín tại Văn Chính. Xe mới, giá rẻ từ 100k, giao xe tận nơi Nguyễn Văn Cừ. Liên hệ ngay 0989.595.533 để nhận ưu đãi!">
+    <meta name="keywords" content="cho thuê xe máy long biên, thuê xe máy văn chính, thuê xe máy nguyễn văn cừ, thuê xe máy hà nội giá rẻ">
+    
+    <!-- Canonical & Open Graph -->
+    <link rel="canonical" href="https://chothuexemayhanoi.github.io/vanchinh/">
+    <meta property="og:url" content="https://chothuexemayhanoi.github.io/vanchinh/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Liên hệ cho thuê xe máy Long Biên - Văn Chính | Uy Tín - Giá Tốt">
+    <meta property="og:description" content="Dịch vụ cho thuê xe máy uy tín tại Long Biên, Hà Nội. Xe mới, thủ tục đơn giản, giao xe tận nơi 24/7.">
+    <meta property="og:image" content="https://chothuexemayhanoi.github.io/vanchinh/thumbnail.jpg">
+
+    <!-- Security -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
 
     <!-- Tailwind CSS -->
@@ -18,15 +30,15 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- 2. JSON-LD: Normalized Coordinates (Numbers) -->
+    <!-- SEO ULTRA MODE: Schema Markup JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MotorcycleRental",
       "name": "Cho Thuê Xe Máy Văn Chính",
-      "image": "",
+      "image": "https://chothuexemayhanoi.github.io/vanchinh/logo.png",
       "telephone": "+84989595533",
-      "url": "https://chothuexemaylongbien.com",
+      "url": "https://chothuexemayhanoi.github.io/vanchinh/", 
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "24 ngõ 5 Nguyễn Văn Cừ",
@@ -43,18 +55,13 @@
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
         ],
         "opens": "00:00",
         "closes": "23:59"
       },
-      "priceRange": "100.000 VND - 200.000 VND"
+      "priceRange": "100.000 VND - 200.000 VND",
+      "description": "Dịch vụ cho thuê xe máy Long Biên uy tín, giá rẻ, thủ tục nhanh gọn."
     }
     </script>
 
@@ -101,13 +108,14 @@
     <!-- HEADER & NAVIGATION -->
     <header class="fixed w-full top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-md transition-colors duration-300">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- Logo -->
-            <a href="#" class="text-xl md:text-2xl font-bold text-brand-700 dark:text-brand-500 flex items-center gap-2 shrink-0">
+            <!-- Logo - Đã thay đổi H1 thành thẻ div/span để tối ưu SEO -->
+            <a href="https://chothuexemayhanoi.github.io/vanchinh/" class="text-xl md:text-2xl font-bold text-brand-700 dark:text-brand-500 flex items-center gap-2 shrink-0">
                 <i class="fa-solid fa-motorcycle"></i>
+                <!-- Thẻ span thay vì h1 -->
                 <span class="hidden sm:inline">Văn Chính</span>
             </a>
 
-            <!-- Desktop Menu (2 Words Limit) -->
+            <!-- Desktop Menu -->
             <nav class="hidden xl:flex items-center space-x-5 text-sm font-semibold whitespace-nowrap overflow-x-auto no-scrollbar">
                 <a href="#home" class="hover:text-brand-600 dark:hover:text-brand-400 transition">Trang chủ</a>
                 <a href="#about" class="hover:text-brand-600 dark:hover:text-brand-400 transition">Giới thiệu</a>
@@ -124,9 +132,7 @@
 
             <!-- Right Side -->
             <div class="flex items-center gap-3 shrink-0">
-                <!-- 5. A11y: Button type for keyboard interaction -->
                 <button type="button" id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Chuyển đổi chế độ sáng tối">
-                    <!-- Icon will be set by JS logic -->
                     <i id="theme-icon" class="fa-solid fa-moon text-lg text-gray-600 dark:text-yellow-400"></i>
                 </button>
 
@@ -141,8 +147,7 @@
             </div>
         </div>
 
-        <!-- Mobile Menu (2 Words Limit) -->
-        <!-- Hidden by default, toggled via JS -->
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden xl:hidden bg-white dark:bg-gray-900 border-t dark:border-gray-800 shadow-lg absolute w-full left-0 max-h-[80vh] overflow-y-auto" role="dialog" aria-modal="true">
             <div class="grid grid-cols-2 gap-2 p-4 font-medium text-center text-sm">
                 <a href="#home" class="mobile-link py-3 bg-gray-50 dark:bg-gray-800 rounded hover:bg-brand-50 dark:hover:bg-gray-700 focus:ring-2 focus:ring-inset focus:ring-brand-500">Trang chủ</a>
@@ -160,8 +165,6 @@
                 <a href="tel:+84989595533" class="col-span-2 py-3 text-white bg-accent-600 rounded font-bold mt-2 focus:ring-2 focus:ring-inset focus:ring-accent-400">
                     <i class="fa-solid fa-phone"></i> Gọi 0989 595 533
                 </a>
-                
-                <!-- Close button for A11y (Visible only on focus or helpful for screen readers) -->
                 <button type="button" id="close-menu-btn" class="sr-only focus:not-sr-only col-span-2 py-2 text-gray-500 underline">Đóng menu</button>
             </div>
         </div>
@@ -169,18 +172,35 @@
 
     <!-- HERO SECTION -->
     <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-br from-brand-50 to-white dark:from-gray-900 dark:to-gray-800">
-        <!-- Abstract Background Icon -->
+        <!-- Abstract Background -->
         <div class="absolute inset-0 z-0 flex items-center justify-center opacity-5 dark:opacity-5 pointer-events-none">
             <i class="fa-solid fa-motorcycle text-[40vw] text-brand-700 dark:text-white transform -rotate-12"></i>
         </div>
         
         <div class="container mx-auto px-4 relative z-10 text-center">
-            <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-700 dark:bg-brand-900 dark:text-brand-300 text-sm font-semibold mb-4">Uy tín - Chất lượng - Giá rẻ</span>
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Cho Thuê Xe Máy <br><span class="text-brand-600 dark:text-brand-500">Long Biên - Hà Nội</span></h1>
-            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">Khám phá mọi ngõ ngách Hà Nội cùng xe máy Văn Chính. Thủ tục nhanh gọn, giao xe tận nơi, hỗ trợ 24/7.</p>
+            <!-- SEO LSI Keyword in Subtitle -->
+            <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-700 dark:bg-brand-900 dark:text-brand-300 text-sm font-semibold mb-4">
+                Dịch vụ Uy tín - Giá chỉ từ 100k/ngày
+            </span>
+            
+            <!-- SEO H1: Chứa từ khóa chính xác nhất -->
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900 dark:text-white">
+                Liên hệ cho thuê xe máy <br>
+                <span class="text-brand-600 dark:text-brand-500">Long Biên - Văn Chính</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+                Khám phá Hà Nội dễ dàng với dịch vụ thuê xe máy chuyên nghiệp tại Nguyễn Văn Cừ. Xe mới, thủ tục 5 phút, hỗ trợ giao xe tận nơi.
+            </p>
+
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="tel:+84989595533" class="bg-accent-600 hover:bg-accent-500 text-white px-8 py-3 rounded-full font-bold text-lg shadow-lg hover:shadow-orange-500/30 transition transform hover:-translate-y-1"><i class="fa-solid fa-phone mr-2"></i> Gọi Đặt Xe</a>
-                <a href="#pricing" class="bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 px-8 py-3 rounded-full font-bold text-lg shadow transition">Xem Bảng Giá</a>
+                <a href="tel:+84989595533" class="bg-accent-600 hover:bg-accent-500 text-white px-8 py-3 rounded-full font-bold text-lg shadow-lg hover:shadow-orange-500/30 transition transform hover:-translate-y-1">
+                    <i class="fa-solid fa-phone mr-2"></i> Gọi Đặt Xe Ngay
+                </a>
+                <!-- Internal Link 1 -->
+                <a href="#pricing" class="bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 px-8 py-3 rounded-full font-bold text-lg shadow transition">
+                    Xem Bảng Giá
+                </a>
             </div>
         </div>
     </section>
@@ -196,12 +216,18 @@
                     </div>
                 </div>
                 <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Về Chúng Tôi - <span class="text-brand-600">Văn Chính</span></h2>
-                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">Tọa lạc tại ngõ 5 Nguyễn Văn Cừ, ngay cửa ngõ Long Biên dẫn vào phố cổ Hà Nội, <strong>Cho thuê xe máy Văn Chính</strong> là địa chỉ tin cậy cho khách du lịch và người đi làm.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-green-500 text-xl"></i><span class="dark:text-gray-200">Xe chính chủ, giấy tờ đầy đủ.</span></li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-green-500 text-xl"></i><span class="dark:text-gray-200">Mũ bảo hiểm vệ sinh, sạch sẽ.</span></li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-green-500 text-xl"></i><span class="dark:text-gray-200">Thủ tục đơn giản (CCCD/Hộ chiếu).</span></li>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Về Chúng Tôi - <span class="text-brand-600">Văn Chính Rental</span></h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                        Tự hào là đơn vị tiên phong trong lĩnh vực <strong>cho thuê xe máy Long Biên</strong>, Văn Chính Store mang đến giải pháp di chuyển tiết kiệm và an toàn cho hàng ngàn du khách và người lao động.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Vị trí đắc địa tại ngõ 5 Nguyễn Văn Cừ giúp bạn dễ dàng di chuyển vào Phố Cổ hoặc đi các tỉnh lân cận. Chúng tôi cam kết chất lượng xe luôn được bảo dưỡng định kỳ, đảm bảo hành trình của bạn không bị gián đoạn.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-green-500 text-xl"></i><span class="dark:text-gray-200">Xe chính chủ, giấy tờ pháp lý rõ ràng.</span></li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-green-500 text-xl"></i><span class="dark:text-gray-200">Mũ bảo hiểm vệ sinh sạch sẽ sau mỗi lượt khách.</span></li>
+                        <!-- Internal Link 2 -->
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check-circle text-green-500 text-xl"></i><span class="dark:text-gray-200">Hỗ trợ <a href="#contact" class="text-brand-600 hover:underline">giao xe tận nơi</a> khu vực Long Biên.</span></li>
                     </ul>
                 </div>
             </div>
@@ -211,22 +237,26 @@
     <!-- SERVICES SECTION -->
     <section id="services" class="py-20">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-12 text-gray-900 dark:text-white">Tại sao chọn Văn Chính?</h2>
+            <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Tại sao chọn thuê xe tại Văn Chính?</h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">Chúng tôi không chỉ cung cấp phương tiện, chúng tôi cung cấp sự an tâm trên mọi cung đường với dịch vụ chuyên nghiệp nhất Long Biên.</p>
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="p-8 rounded-2xl bg-white dark:bg-gray-800 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition group">
                     <div class="w-16 h-16 bg-brand-100 dark:bg-brand-900 text-brand-600 dark:text-brand-400 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 group-hover:bg-brand-600 group-hover:text-white transition"><i class="fa-solid fa-wrench"></i></div>
-                    <h3 class="text-xl font-bold mb-3 dark:text-white">Xe Chất Lượng Cao</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Đa dạng các dòng xe ga, xe số (Honda, Yamaha) đời mới, vận hành êm ái.</p>
+                    <h3 class="text-xl font-bold mb-3 dark:text-white">Bảo Dưỡng Định Kỳ</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Tất cả xe ga, xe số đều được kiểm tra phanh, lốp, nhớt trước khi giao cho khách để đảm bảo an toàn tuyệt đối.</p>
+                    <!-- Internal Link 3 -->
+                    <a href="#models" class="text-brand-600 font-semibold text-sm hover:underline">Xem các dòng xe &rarr;</a>
                 </div>
                 <div class="p-8 rounded-2xl bg-white dark:bg-gray-800 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition group">
                     <div class="w-16 h-16 bg-brand-100 dark:bg-brand-900 text-brand-600 dark:text-brand-400 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 group-hover:bg-brand-600 group-hover:text-white transition"><i class="fa-solid fa-headset"></i></div>
-                    <h3 class="text-xl font-bold mb-3 dark:text-white">Hỗ Trợ 24/7</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Luôn sẵn sàng hỗ trợ khách hàng mọi lúc, mọi nơi khi gặp sự cố trên đường.</p>
+                    <h3 class="text-xl font-bold mb-3 dark:text-white">Cứu Hộ 24/7</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Đội ngũ kỹ thuật viên luôn túc trực để hỗ trợ bạn đổi xe hoặc sửa chữa lưu động bất kể ngày đêm.</p>
                 </div>
                 <div class="p-8 rounded-2xl bg-white dark:bg-gray-800 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition group">
                     <div class="w-16 h-16 bg-brand-100 dark:bg-brand-900 text-brand-600 dark:text-brand-400 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 group-hover:bg-brand-600 group-hover:text-white transition"><i class="fa-solid fa-piggy-bank"></i></div>
-                    <h3 class="text-xl font-bold mb-3 dark:text-white">Giá Cả Hợp Lý</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Giá thuê cạnh tranh nhất khu vực Long Biên. Có ưu đãi cho thuê dài hạn.</p>
+                    <h3 class="text-xl font-bold mb-3 dark:text-white">Giá Cạnh Tranh Nhất</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Cam kết không phí ẩn. Giá thuê xe máy tại Văn Chính luôn tốt nhất khu vực Nguyễn Văn Cừ với nhiều ưu đãi cho sinh viên.</p>
                 </div>
             </div>
         </div>
@@ -236,29 +266,31 @@
     <section id="procedure" class="py-20 bg-brand-50 dark:bg-gray-900 border-t border-b dark:border-gray-800">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <span class="text-brand-600 font-bold tracking-wider uppercase text-sm">Quy trình</span>
+                <span class="text-brand-600 font-bold tracking-wider uppercase text-sm">Quy trình tối ưu</span>
                 <h2 class="text-3xl font-bold text-gray-900 dark:text-white mt-2">Thủ Tục Thuê Xe Đơn Giản</h2>
+                <p class="mt-4 text-gray-600 dark:text-gray-300">Chúng tôi lược bỏ các bước rườm rà để bạn nhận xe nhanh nhất.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
                 <div class="relative p-6">
                     <div class="w-20 h-20 mx-auto bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-lg mb-4 text-3xl text-brand-500 font-bold border-4 border-brand-100 dark:border-brand-900">1</div>
-                    <h3 class="text-lg font-bold mb-2 dark:text-white">Liên hệ</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Gọi điện hoặc nhắn tin Zalo để check xe và đặt lịch.</p>
+                    <h3 class="text-lg font-bold mb-2 dark:text-white">Liên hệ đặt xe</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Gọi Hotline/Zalo 0989 595 533 để check tình trạng xe và giữ xe.</p>
                 </div>
                 <div class="relative p-6">
                     <div class="w-20 h-20 mx-auto bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-lg mb-4 text-3xl text-brand-500 font-bold border-4 border-brand-100 dark:border-brand-900">2</div>
-                    <h3 class="text-lg font-bold mb-2 dark:text-white">Giấy tờ</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Chỉ cần CCCD (Gắn chip) hoặc Hộ chiếu + Bằng lái xe.</p>
+                    <h3 class="text-lg font-bold mb-2 dark:text-white">Chuẩn bị giấy tờ</h3>
+                    <!-- Internal Link 4 -->
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Chỉ cần CCCD gắn chip. Xem chi tiết tại phần <a href="#policy" class="text-brand-600 hover:underline">chính sách</a>.</p>
                 </div>
                 <div class="relative p-6">
                     <div class="w-20 h-20 mx-auto bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-lg mb-4 text-3xl text-brand-500 font-bold border-4 border-brand-100 dark:border-brand-900">3</div>
-                    <h3 class="text-lg font-bold mb-2 dark:text-white">Nhận xe</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Nhận xe tại cửa hàng hoặc giao tận nơi tại Long Biên.</p>
+                    <h3 class="text-lg font-bold mb-2 dark:text-white">Ký hợp đồng & Nhận xe</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Thủ tục 5 phút. Nhận xe tại cửa hàng hoặc giao tận nơi.</p>
                 </div>
                 <div class="relative p-6">
                     <div class="w-20 h-20 mx-auto bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-lg mb-4 text-3xl text-brand-500 font-bold border-4 border-brand-100 dark:border-brand-900">4</div>
-                    <h3 class="text-lg font-bold mb-2 dark:text-white">Vi vu</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Thanh toán và bắt đầu hành trình khám phá Hà Nội.</p>
+                    <h3 class="text-lg font-bold mb-2 dark:text-white">Thanh toán & Vi vu</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Thanh toán linh hoạt (tiền mặt/chuyển khoản) và bắt đầu hành trình.</p>
                 </div>
             </div>
         </div>
@@ -267,7 +299,8 @@
     <!-- MODELS SECTION -->
     <section id="models" class="py-20 bg-white dark:bg-gray-800">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">Các Dòng Xe Nổi Bật</h2>
+            <h2 class="text-3xl font-bold mb-4 text-center text-gray-900 dark:text-white">Các Dòng Xe Máy Nổi Bật</h2>
+            <p class="text-center text-gray-600 dark:text-gray-400 mb-10">Đa dạng mẫu mã từ xe số tiết kiệm xăng đến xe ga thời trang, phù hợp mọi nhu cầu.</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Bike 1 -->
                 <div class="group rounded-xl overflow-hidden shadow-lg bg-gray-50 dark:bg-gray-700 hover:-translate-y-2 transition duration-300">
@@ -276,7 +309,8 @@
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-lg dark:text-white">Honda Vision</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-300">Nhỏ gọn, tiết kiệm xăng</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-300 mb-2">Nhỏ gọn, tiết kiệm xăng, phù hợp nữ giới.</p>
+                        <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Xe Ga</span>
                     </div>
                 </div>
                 <!-- Bike 2 -->
@@ -286,7 +320,8 @@
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-lg dark:text-white">Honda AirBlade</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-300">Mạnh mẽ, cốp rộng</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-300 mb-2">Động cơ mạnh mẽ, cốp rộng, nam tính.</p>
+                        <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Xe Ga</span>
                     </div>
                 </div>
                 <!-- Bike 3 -->
@@ -296,7 +331,8 @@
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-lg dark:text-white">Yamaha Sirius</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-300">Xe số bền bỉ, leo dốc tốt</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-300 mb-2">Bền bỉ, leo dốc tốt, siêu tiết kiệm nhiên liệu.</p>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Xe Số</span>
                     </div>
                 </div>
                  <!-- Bike 4 -->
@@ -306,7 +342,8 @@
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-lg dark:text-white">Honda Lead</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-300">Cốp siêu rộng, đi êm</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-300 mb-2">Cốp siêu rộng ("Ninja"), vận hành êm ái.</p>
+                        <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Xe Ga</span>
                     </div>
                 </div>
             </div>
@@ -317,33 +354,35 @@
     <section id="pricing" class="py-20 bg-brand-50 dark:bg-gray-800/30">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Bảng Giá Tham Khảo</h2>
-                <p class="text-gray-600 dark:text-gray-400">Liên hệ trực tiếp để có giá tốt nhất theo ngày/tháng</p>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Bảng Giá Cho Thuê Xe Máy</h2>
+                <p class="text-gray-600 dark:text-gray-400">Giá thuê xe tại Văn Chính luôn minh bạch. Thuê càng lâu, giá càng rẻ.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 <!-- Xe Số -->
                 <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden border-t-4 border-brand-500">
                     <div class="p-6 text-center">
-                        <h3 class="text-2xl font-bold mb-2 dark:text-white">Xe Số</h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm">Wave Alpha, Sirius</p>
+                        <h3 class="text-2xl font-bold mb-2 dark:text-white">Gói Xe Số</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">Honda Wave, Yamaha Sirius</p>
                         <div class="my-6"><span class="text-4xl font-bold text-brand-600 dark:text-brand-400">100k</span><span class="text-gray-500">/ngày</span></div>
                         <ul class="text-left space-y-3 mb-6 text-gray-600 dark:text-gray-300">
-                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-500 mr-2"></i> Tiết kiệm xăng</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-500 mr-2"></i> Kèm 2 mũ bảo hiểm</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-500 mr-2"></i> Phù hợp đi phượt, đường dài</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-500 mr-2"></i> Tiết kiệm xăng tối đa</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-500 mr-2"></i> Tặng kèm 2 mũ bảo hiểm</li>
                         </ul>
                         <a href="tel:+84989595533" class="block w-full py-3 bg-brand-100 dark:bg-brand-900 text-brand-700 dark:text-brand-300 font-bold rounded-lg hover:bg-brand-200 transition">Liên hệ ngay</a>
                     </div>
                 </div>
                 <!-- Xe Ga -->
                 <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden border-t-4 border-accent-500 transform md:scale-105 z-10">
-                    <div class="bg-accent-500 text-white text-xs font-bold uppercase py-1 text-center">Phổ biến nhất</div>
+                    <div class="bg-accent-500 text-white text-xs font-bold uppercase py-1 text-center">Được thuê nhiều nhất</div>
                     <div class="p-6 text-center">
-                        <h3 class="text-2xl font-bold mb-2 dark:text-white">Xe Ga</h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm">Vision, Lead, AirBlade cũ</p>
+                        <h3 class="text-2xl font-bold mb-2 dark:text-white">Gói Xe Ga</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">Vision, Lead, AirBlade</p>
                         <div class="my-6"><span class="text-4xl font-bold text-accent-600 dark:text-accent-400">130k</span><span class="text-gray-500">/ngày</span></div>
                         <ul class="text-left space-y-3 mb-6 text-gray-600 dark:text-gray-300">
-                            <li class="flex items-center"><i class="fa-solid fa-check text-accent-500 mr-2"></i> Cốp rộng rãi</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-accent-500 mr-2"></i> Thời trang, dễ lái</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent-500 mr-2"></i> Cốp rộng rãi, tiện lợi</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent-500 mr-2"></i> Thời trang, dễ điều khiển</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-accent-500 mr-2"></i> Xe chạy êm, máy khỏe</li>
                         </ul>
                         <a href="tel:+84989595533" class="block w-full py-3 bg-accent-600 text-white font-bold rounded-lg hover:bg-accent-700 transition shadow-lg">Gọi đặt xe</a>
                     </div>
@@ -351,12 +390,13 @@
                 <!-- Xe Ga Mới -->
                 <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden border-t-4 border-brand-500">
                     <div class="p-6 text-center">
-                        <h3 class="text-2xl font-bold mb-2 dark:text-white">Xe Ga Mới</h3>
-                        <p class="text-gray-500 dark:text-gray-400 text-sm">AB 125/150, SH Mode</p>
+                        <h3 class="text-2xl font-bold mb-2 dark:text-white">Xe Ga Cao Cấp</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">AB 150, SH Mode, NVX</p>
                         <div class="my-6"><span class="text-4xl font-bold text-brand-600 dark:text-brand-400">180k+</span><span class="text-gray-500">/ngày</span></div>
                         <ul class="text-left space-y-3 mb-6 text-gray-600 dark:text-gray-300">
-                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-500 mr-2"></i> Xe đời mới 2022+</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-500 mr-2"></i> Động cơ mạnh mẽ</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-500 mr-2"></i> Xe đời mới 2023-2024</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-500 mr-2"></i> Sang trọng, đẳng cấp</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-brand-500 mr-2"></i> Bảo hiểm thân vỏ</li>
                         </ul>
                         <a href="tel:+84989595533" class="block w-full py-3 bg-brand-100 dark:bg-brand-900 text-brand-700 dark:text-brand-300 font-bold rounded-lg hover:bg-brand-200 transition">Liên hệ ngay</a>
                     </div>
@@ -368,25 +408,25 @@
     <!-- REVIEWS SECTION -->
     <section id="reviews" class="py-20 bg-white dark:bg-gray-900">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center text-gray-900 dark:text-white">Khách Hàng Nói Gì?</h2>
+            <h2 class="text-3xl font-bold mb-12 text-center text-gray-900 dark:text-white">Khách Hàng Nói Gì Về Chúng Tôi?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Review 1 -->
                 <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
                     <div class="flex text-yellow-400 mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p class="text-gray-600 dark:text-gray-300 italic mb-4">"Xe rất mới và êm. Anh chủ nhiệt tình chỉ đường đi chơi ở Hà Nội. Giá cả lại rất hợp lý so với mặt bằng chung."</p>
+                    <p class="text-gray-600 dark:text-gray-300 italic mb-4">"Xe ở Văn Chính rất mới và êm. Anh chủ nhiệt tình chỉ đường đi chơi ở phố cổ và Aeon Mall. Giá cả lại rất hợp lý so với các chỗ khác ở Long Biên."</p>
                     <div class="font-bold dark:text-white flex items-center gap-2"><i class="fa-solid fa-user-circle text-gray-400 text-xl"></i> Minh Tú (Đà Nẵng)</div>
                 </div>
                 <!-- Review 2 -->
                 <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
                     <div class="flex text-yellow-400 mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p class="text-gray-600 dark:text-gray-300 italic mb-4">"Thuê xe 3 ngày đi lòng vòng Hà Nội không gặp lỗi gì. Thủ tục nhanh gọn lẹ, không cần cọc tiền mặt nếu có đủ giấy tờ."</p>
+                    <p class="text-gray-600 dark:text-gray-300 italic mb-4">"Thuê xe 3 ngày đi lòng vòng Hà Nội không gặp lỗi gì. Thủ tục nhanh gọn lẹ, không cần cọc tiền mặt nếu có đủ giấy tờ (CCCD + Bằng lái)."</p>
                     <div class="font-bold dark:text-white flex items-center gap-2"><i class="fa-solid fa-user-circle text-gray-400 text-xl"></i> Sarah Jenkins (UK)</div>
                 </div>
                 <!-- Review 3 -->
                 <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
                     <div class="flex text-yellow-400 mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
-                    <p class="text-gray-600 dark:text-gray-300 italic mb-4">"Giao xe tận nơi ở Aeon Mall Long Biên rất đúng giờ. Xe Vision chạy bốc, mũ bảo hiểm sạch sẽ."</p>
-                    <div class="font-bold dark:text-white flex items-center gap-2"><i class="fa-solid fa-user-circle text-gray-400 text-xl"></i> Văn Hùng (HP)</div>
+                    <p class="text-gray-600 dark:text-gray-300 italic mb-4">"Giao xe tận nơi ở Aeon Mall Long Biên rất đúng giờ. Xe Vision chạy bốc, mũ bảo hiểm sạch sẽ, không có mùi hôi. Sẽ quay lại ủng hộ."</p>
+                    <div class="font-bold dark:text-white flex items-center gap-2"><i class="fa-solid fa-user-circle text-gray-400 text-xl"></i> Văn Hùng (Hải Phòng)</div>
                 </div>
             </div>
         </div>
@@ -397,10 +437,10 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-end mb-8">
                 <div>
-                    <span class="text-brand-600 font-bold uppercase text-sm">Góc chia sẻ</span>
-                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Cẩm Nang Du Lịch</h2>
+                    <span class="text-brand-600 font-bold uppercase text-sm">Góc chia sẻ kinh nghiệm</span>
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Cẩm Nang Du Lịch Hà Nội</h2>
                 </div>
-                <a href="#" class="text-brand-600 hover:underline font-medium mt-4 md:mt-0">Xem tất cả ></a>
+                <a href="#" class="text-brand-600 hover:underline font-medium mt-4 md:mt-0">Xem tất cả bài viết ></a>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -410,7 +450,7 @@
                     </div>
                     <div class="p-6">
                         <h3 class="font-bold text-lg mb-2 dark:text-white hover:text-brand-600 cursor-pointer">Top 5 điểm check-in Long Biên</h3>
-                        <p class="text-sm text-gray-500 mb-4">Cầu Long Biên, Aeon Mall, Thảo Nguyên Hoa...</p>
+                        <p class="text-sm text-gray-500 mb-4">Cầu Long Biên lịch sử, Aeon Mall sầm uất, Thảo Nguyên Hoa rực rỡ...</p>
                         <a href="#" class="text-brand-600 text-sm font-bold">Đọc thêm</a>
                     </div>
                 </article>
@@ -420,7 +460,7 @@
                    </div>
                     <div class="p-6">
                         <h3 class="font-bold text-lg mb-2 dark:text-white hover:text-brand-600 cursor-pointer">Kinh nghiệm phượt ngoại thành</h3>
-                        <p class="text-sm text-gray-500 mb-4">Những cung đường đẹp gần Hà Nội cho dịp cuối tuần.</p>
+                        <p class="text-sm text-gray-500 mb-4">Những cung đường đẹp gần Hà Nội cho dịp cuối tuần như Ba Vì, Sóc Sơn.</p>
                         <a href="#" class="text-brand-600 text-sm font-bold">Đọc thêm</a>
                     </div>
                 </article>
@@ -430,7 +470,7 @@
                    </div>
                     <div class="p-6">
                         <h3 class="font-bold text-lg mb-2 dark:text-white hover:text-brand-600 cursor-pointer">Lưu ý giao thông tại Hà Nội</h3>
-                        <p class="text-sm text-gray-500 mb-4">Các tuyến phố cấm, giờ cao điểm cần tránh.</p>
+                        <p class="text-sm text-gray-500 mb-4">Danh sách các tuyến phố cấm, giờ cao điểm cần tránh khi di chuyển.</p>
                         <a href="#" class="text-brand-600 text-sm font-bold">Đọc thêm</a>
                     </div>
                 </article>
@@ -443,31 +483,33 @@
         <div class="container mx-auto px-4 max-w-4xl">
             <h2 class="text-3xl font-bold mb-10 text-center text-gray-900 dark:text-white">Câu Hỏi Thường Gặp (FAQ)</h2>
             <div class="space-y-4">
+                <!-- Internal Link 5 -->
+                <p class="text-center text-gray-500 mb-6">Nếu bạn có thắc mắc khác, hãy tham khảo thêm <a href="#guide" class="text-brand-600 hover:underline">cẩm nang</a> hoặc liên hệ trực tiếp.</p>
                 <details class="group bg-gray-50 dark:bg-gray-800 rounded-lg p-4 cursor-pointer">
                     <summary class="flex justify-between items-center font-medium text-lg dark:text-white list-none">
-                        <span>1. Tôi có cần đặt cọc tiền không?</span>
+                        <span>1. Tôi có cần đặt cọc tiền khi thuê xe không?</span>
                         <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
                     </summary>
                     <p class="text-gray-600 dark:text-gray-300 mt-3 pl-4 border-l-2 border-brand-500">
-                        Nếu bạn có đầy đủ giấy tờ tùy thân (CCCD gắn chip/Hộ chiếu) và bằng lái xe, chúng tôi có thể linh động không yêu cầu cọc tiền mặt. Trường hợp thiếu giấy tờ, mức cọc từ 1-3 triệu đồng tùy loại xe.
+                        Tại Văn Chính, nếu bạn có đầy đủ giấy tờ tùy thân (CCCD gắn chip/Hộ chiếu) và bằng lái xe hợp lệ, chúng tôi có thể linh động <strong>không yêu cầu đặt cọc tiền mặt</strong>. Trường hợp thiếu giấy tờ, mức cọc chỉ từ 1-3 triệu đồng tùy giá trị xe.
                     </p>
                 </details>
                 <details class="group bg-gray-50 dark:bg-gray-800 rounded-lg p-4 cursor-pointer">
                     <summary class="flex justify-between items-center font-medium text-lg dark:text-white list-none">
-                        <span>2. Có giao xe tận nơi không?</span>
+                        <span>2. Có giao xe tận nơi tại Long Biên không?</span>
                         <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
                     </summary>
                     <p class="text-gray-600 dark:text-gray-300 mt-3 pl-4 border-l-2 border-brand-500">
-                        Chúng tôi miễn phí giao xe trong bán kính 3km quanh khu vực Nguyễn Văn Cừ, Long Biên. Các khu vực xa hơn sẽ có phụ phí nhỏ tiền xăng xe ôm.
+                        Có. Chúng tôi miễn phí giao xe trong bán kính 3km quanh khu vực Nguyễn Văn Cừ, Long Biên. Các khu vực xa hơn (Gia Lâm, Phố Cổ) sẽ có phụ phí xăng xe nhỏ hỗ trợ nhân viên giao nhận.
                     </p>
                 </details>
                 <details class="group bg-gray-50 dark:bg-gray-800 rounded-lg p-4 cursor-pointer">
                     <summary class="flex justify-between items-center font-medium text-lg dark:text-white list-none">
-                        <span>3. Xe hỏng giữa đường thì sao?</span>
+                        <span>3. Xe hỏng giữa đường thì xử lý thế nào?</span>
                         <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
                     </summary>
                     <p class="text-gray-600 dark:text-gray-300 mt-3 pl-4 border-l-2 border-brand-500">
-                        Văn Chính hỗ trợ sự cố 24/7. Nếu lỗi do xe, chúng tôi sẽ đến tận nơi đổi xe khác cho bạn hoặc thanh toán chi phí sửa chữa.
+                        Văn Chính cam kết hỗ trợ sự cố 24/7. Nếu lỗi kỹ thuật do xe (động cơ, ắc quy), chúng tôi sẽ đến tận nơi đổi xe khác cho bạn hoặc thanh toán 100% chi phí sửa chữa. Nếu thủng săm lốp do đi đường, khách hàng vui lòng tự thanh toán vá xe.
                     </p>
                 </details>
             </div>
@@ -477,11 +519,11 @@
     <!-- POLICY SECTION -->
     <section id="policy" class="py-16 bg-gray-100 dark:bg-gray-800 text-center">
         <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Chính Sách Thuê Xe</h2>
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Chính Sách Thuê Xe Minh Bạch</h2>
             <div class="flex flex-wrap justify-center gap-6">
                 <div class="bg-white dark:bg-gray-700 px-6 py-4 rounded-lg shadow-sm flex items-center gap-3">
                     <i class="fa-solid fa-clock text-brand-500 text-xl"></i>
-                    <span class="dark:text-gray-200">Tính ngày là 24h</span>
+                    <span class="dark:text-gray-200">Tính 1 ngày = 24h</span>
                 </div>
                 <div class="bg-white dark:bg-gray-700 px-6 py-4 rounded-lg shadow-sm flex items-center gap-3">
                     <i class="fa-solid fa-gas-pump text-brand-500 text-xl"></i>
@@ -493,7 +535,7 @@
                 </div>
                 <div class="bg-white dark:bg-gray-700 px-6 py-4 rounded-lg shadow-sm flex items-center gap-3">
                     <i class="fa-solid fa-id-card text-brand-500 text-xl"></i>
-                    <span class="dark:text-gray-200">Giữ lại 1 giấy tờ gốc</span>
+                    <span class="dark:text-gray-200">Giữ 1 giấy tờ gốc</span>
                 </div>
             </div>
         </div>
@@ -505,39 +547,38 @@
             <div class="flex flex-col lg:flex-row gap-8 bg-white dark:bg-gray-800 rounded-3xl shadow-2xl overflow-hidden">
                 <!-- Contact Info Column -->
                 <div class="lg:w-1/3 p-10 bg-brand-600 text-white flex flex-col justify-center">
-                    <h2 class="text-3xl font-bold mb-6">Liên Hệ</h2>
-                    <p class="mb-8 text-brand-100">Hãy gọi cho chúng tôi để được tư vấn dòng xe phù hợp nhất.</p>
+                    <h2 class="text-3xl font-bold mb-6">Liên Hệ Đặt Xe</h2>
+                    <p class="mb-8 text-brand-100">Hãy gọi ngay cho Văn Chính để được tư vấn dòng xe phù hợp nhất với hành trình của bạn.</p>
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
                             <div class="w-10 h-10 bg-brand-500 rounded-full flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-phone"></i></div>
-                            <div><h4 class="font-bold text-lg">Điện thoại / Zalo</h4><a href="tel:+84989595533" class="text-2xl font-bold hover:text-brand-200 transition">+84 989 595 533</a></div>
+                            <div><h4 class="font-bold text-lg">Hotline / Zalo</h4><a href="tel:+84989595533" class="text-2xl font-bold hover:text-brand-200 transition">+84 989 595 533</a></div>
                         </div>
                         <div class="flex items-start gap-4">
                             <div class="w-10 h-10 bg-brand-500 rounded-full flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-location-dot"></i></div>
-                            <div><h4 class="font-bold text-lg">Địa chỉ</h4><p class="text-brand-100">24 ngõ 5 Nguyễn Văn Cừ, Long Biên, Hà Nội</p></div>
+                            <div><h4 class="font-bold text-lg">Địa chỉ cửa hàng</h4><p class="text-brand-100">24 ngõ 5 Nguyễn Văn Cừ, Long Biên, Hà Nội</p></div>
                         </div>
                     </div>
                     
-                    <!-- 4. Form & Anti-Spam: New Inquiry Form -->
+                    <!-- Form Inquiry -->
                     <div class="mt-8 pt-8 border-t border-brand-500">
                         <h4 class="font-bold text-lg mb-4">Gửi Yêu Cầu Gọi Lại</h4>
-                        <form action="#" method="POST" class="space-y-3" onsubmit="alert('Cảm ơn! Chúng tôi sẽ liên hệ sớm.'); return false;">
-                            <!-- Honeypot Field (Hidden) -->
+                        <form action="#" method="POST" class="space-y-3" onsubmit="alert('Cảm ơn! Chúng tôi sẽ liên hệ lại sớm nhất.'); return false;">
+                            <!-- Honeypot Field -->
                             <input type="text" name="honeypot_field" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
                             
                             <div>
-                                <input type="tel" name="phone" placeholder="Số điện thoại của bạn" required pattern="[0-9]{10,11}" class="w-full px-4 py-2 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-accent-500" title="Vui lòng nhập số điện thoại hợp lệ (10-11 số)">
+                                <input type="tel" name="phone" placeholder="Nhập số điện thoại của bạn..." required pattern="[0-9]{10,11}" class="w-full px-4 py-2 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-accent-500" title="Vui lòng nhập số điện thoại hợp lệ">
                             </div>
-                            <button type="submit" class="w-full bg-accent-600 hover:bg-accent-500 text-white font-bold py-2 rounded transition">Gửi Yêu Cầu</button>
+                            <button type="submit" class="w-full bg-accent-600 hover:bg-accent-500 text-white font-bold py-2 rounded transition">Gửi Yêu Cầu Tư Vấn</button>
                         </form>
                     </div>
                 </div>
 
                 <!-- Map Column -->
                 <div class="lg:w-2/3 h-80 lg:h-auto min-h-[300px] bg-gray-200 relative">
-                    <iframe title="Bản đồ vị trí cửa hàng" width="100%" height="100%" frameborder="0" style="border:0" scrolling="no" src="https://maps.google.com/maps?q=24%20ng%C3%B5%205%20Nguy%E1%BB%85n%20V%C4%83n%20C%E1%BB%AB%2C%20Long%20Bi%C3%AAn%2C%20H%C3%A0%20N%E1%BB%99i&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+                    <iframe title="Bản đồ vị trí cửa hàng Văn Chính" width="100%" height="100%" frameborder="0" style="border:0" scrolling="no" src="https://maps.google.com/maps?q=24%20ng%C3%B5%205%20Nguy%E1%BB%85n%20V%C4%83n%20C%E1%BB%AB%2C%20Long%20Bi%C3%AAn%2C%20H%C3%A0%20N%E1%BB%99i&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
                     <div class="absolute bottom-4 right-4">
-                         <!-- 3. Link Security: Added rel="noopener noreferrer" -->
                          <a href="https://maps.google.com/maps?q=24%20ng%C3%B5%205%20Nguy%E1%BB%85n%20V%C4%83n%20C%E1%BB%AB%2C%20Long%20Bi%C3%AAn%2C%20H%C3%A0%20N%E1%BB%99i" target="_blank" rel="noopener noreferrer" class="bg-white text-brand-600 px-4 py-2 rounded shadow font-bold text-sm hover:bg-gray-100"><i class="fa-solid fa-map-location-dot mr-1"></i> Mở Google Maps</a>
                     </div>
                 </div>
@@ -545,63 +586,61 @@
         </div>
     </section>
 
-    <!-- FOOTER (2 Words Links) -->
+    <!-- FOOTER -->
     <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-1">
-                    <a href="#" class="text-2xl font-bold text-white flex items-center gap-2 mb-4"><i class="fa-solid fa-motorcycle text-brand-500"></i><span>Văn Chính</span></a>
-                    <p class="text-sm mb-4">Dịch vụ cho thuê xe máy uy tín hàng đầu tại Long Biên. Đồng hành cùng bạn trên mọi nẻo đường Hà Nội.</p>
+                    <a href="https://chothuexemayhanoi.github.io/vanchinh/" class="text-2xl font-bold text-white flex items-center gap-2 mb-4"><i class="fa-solid fa-motorcycle text-brand-500"></i><span>Văn Chính</span></a>
+                    <p class="text-sm mb-4">Dịch vụ cho thuê xe máy uy tín hàng đầu tại Long Biên. Đồng hành cùng bạn trên mọi nẻo đường Hà Nội với sự an toàn và tin cậy.</p>
                 </div>
 
-                <!-- Navigation Links (2 words max) -->
+                <!-- Navigation Links -->
                 <div class="col-span-1">
-                    <h3 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Menu</h3>
+                    <h3 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Menu Chính</h3>
                     <ul class="space-y-2 text-sm">
                         <li><a href="#home" class="hover:text-brand-500 transition">Trang chủ</a></li>
                         <li><a href="#about" class="hover:text-brand-500 transition">Giới thiệu</a></li>
                         <li><a href="#services" class="hover:text-brand-500 transition">Dịch vụ</a></li>
                         <li><a href="#procedure" class="hover:text-brand-500 transition">Thủ tục</a></li>
                         <li><a href="#models" class="hover:text-brand-500 transition">Dòng xe</a></li>
-                        <li><a href="#reviews" class="hover:text-brand-500 transition">Đánh giá</a></li>
-                        <li><a href="#guide" class="hover:text-brand-500 transition">Cẩm nang</a></li>
-                        <li><a href="#faq" class="hover:text-brand-500 transition">Hỏi đáp</a></li>
-                        <li><a href="#policy" class="hover:text-brand-500 transition">Chính sách</a></li>
                         <li><a href="#pricing" class="hover:text-brand-500 transition">Bảng giá</a></li>
                         <li><a href="#contact" class="hover:text-brand-500 transition">Liên hệ</a></li>
                     </ul>
                 </div>
 
                 <div class="col-span-1">
-                    <h3 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Thông Tin</h3>
+                    <h3 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Thông Tin Liên Hệ</h3>
                     <ul class="space-y-2">
-                        <li><i class="fa-solid fa-location-arrow mr-2 text-brand-500"></i> Long Biên, Hà Nội</li>
-                        <li><i class="fa-solid fa-phone mr-2 text-brand-500"></i> 0989 595 533</li>
+                        <li><i class="fa-solid fa-location-arrow mr-2 text-brand-500"></i> 24 ngõ 5 Nguyễn Văn Cừ, Long Biên, Hà Nội</li>
+                        <li><i class="fa-solid fa-phone mr-2 text-brand-500"></i> <a href="tel:+84989595533" class="hover:text-white">0989 595 533</a></li>
                         <li><i class="fa-solid fa-envelope mr-2 text-brand-500"></i> vanchinh@gmail.com</li>
                     </ul>
                 </div>
                 
                 <div class="col-span-1">
-                     <h3 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Mạng xã hội</h3>
+                     <h3 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Kết Nối Với Chúng Tôi</h3>
                      <div class="flex space-x-4 mb-6">
-                         <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
-                         <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><i class="fa-brands fa-tiktok"></i></a>
-                         <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition"><i class="fa-brands fa-google"></i></a>
+                         <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                         <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                         <a href="#" class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition" aria-label="Google"><i class="fa-brands fa-google"></i></a>
                      </div>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
-                <p>&copy; 2024 Cho thuê xe máy Văn Chính. All rights reserved.</p>
+                <p>&copy; 2024 Cho thuê xe máy Văn Chính. Bảo lưu mọi quyền.</p>
             </div>
         </div>
     </footer>
 
     <!-- Fixed Call Button Mobile -->
-    <a href="tel:+84989595533" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg animate-bounce md:hidden"><i class="fa-solid fa-phone text-2xl"></i></a>
+    <a href="tel:+84989595533" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg animate-bounce md:hidden" aria-label="Gọi điện ngay">
+        <i class="fa-solid fa-phone text-2xl"></i>
+    </a>
 
     <!-- SCRIPTS -->
     <script>
-        // 2. Security: DOMPurify Sanitization Helper
+        // Security Helper
         function safeHtml(html) {
             return DOMPurify.sanitize(html);
         }
@@ -611,9 +650,6 @@
         const themeIcon = document.getElementById('theme-icon');
         const html = document.documentElement;
 
-        // 6. Theme UI: Standardized Icon Logic
-        // If current is dark -> Show Sun icon (indicating "Switch to Light")
-        // If current is light -> Show Moon icon (indicating "Switch to Dark")
         function updateThemeIcon(isDark) {
             if (isDark) {
                 themeIcon.className = 'fa-solid fa-sun text-lg text-yellow-400';
@@ -638,7 +674,7 @@
             updateThemeIcon(isDark);
         });
 
-        // 5. Accessibility (A11y): Mobile Menu Focus Trap & Logic
+        // Mobile Menu Logic
         const menuBtn = document.getElementById('menu-btn');
         const closeMenuBtn = document.getElementById('close-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -649,29 +685,21 @@
             const isHidden = mobileMenu.classList.contains('hidden');
             
             if (isHidden) {
-                // Open Menu
                 mobileMenu.classList.remove('hidden');
                 menuIcon.classList.replace('fa-bars', 'fa-xmark');
                 menuBtn.setAttribute('aria-expanded', 'true');
                 
-                // Focus Trap: Set focus to first link
                 setTimeout(() => {
                     const firstLink = mobileMenu.querySelector('a');
                     if(firstLink) firstLink.focus();
                 }, 100);
 
-                // Add Escape key listener
                 document.addEventListener('keydown', handleMenuKeydown);
             } else {
-                // Close Menu
                 mobileMenu.classList.add('hidden');
                 menuIcon.classList.replace('fa-xmark', 'fa-bars');
                 menuBtn.setAttribute('aria-expanded', 'false');
-                
-                // Return focus to toggle button
                 menuBtn.focus();
-                
-                // Remove Escape key listener
                 document.removeEventListener('keydown', handleMenuKeydown);
             }
         }
@@ -680,18 +708,17 @@
             if (e.key === 'Escape') {
                 toggleMenu();
             }
-            // Simple focus trap (keeps Tab inside menu)
             const focusableElements = mobileMenu.querySelectorAll('a, button');
             const firstElement = focusableElements[0];
             const lastElement = focusableElements[focusableElements.length - 1];
 
             if (e.key === 'Tab') {
-                if (e.shiftKey) { // Shift + Tab
+                if (e.shiftKey) { 
                     if (document.activeElement === firstElement) {
                         e.preventDefault();
                         lastElement.focus();
                     }
-                } else { // Tab
+                } else { 
                     if (document.activeElement === lastElement) {
                         e.preventDefault();
                         firstElement.focus();
